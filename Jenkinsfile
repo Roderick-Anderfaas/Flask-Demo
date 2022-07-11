@@ -10,7 +10,7 @@ pipeline {
                 // Run venv
                 sh "python3 -m venv .venv"
                 //tests print
-                sh "echo 'This is inside the jenkins file'"
+                sh "echo This is inside the jenkins file"
 
                 // Run pip install
                 sh "pip3 install -r requirements-dev.txt"
