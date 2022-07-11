@@ -19,6 +19,11 @@ pipeline {
                 sh "python3 -m pytest app-test.py"
             }
         }
+        stage('Test') {
+            steps {
+                sh "echo this is inside the jenkins console"
+            }
+        }
 
     }
 }
